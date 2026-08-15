@@ -1,6 +1,11 @@
-/* =========================================
+/* =========================================================
+   HAILEY ROSQUIST - DATA SCIENCE PORTFOLIO
+========================================================= */
+
+
+/* =========================================================
    GENERAL
-========================================= */
+========================================================= */
 
 * {
     margin: 0;
@@ -27,76 +32,92 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
 
-/* =========================================
+
+/* =========================================================
    HEADER
-========================================= */
+========================================================= */
 
 .site-header {
-    background:
-        linear-gradient(
-            135deg,
-            #173f73,
-            #2f6fb0,
-            #7aa7d9
-        );
+    background: linear-gradient(
+        135deg,
+        #173f73 0%,
+        #2f6fb0 50%,
+        #7aa7d9 100%
+    );
 
     color: white;
     text-align: center;
-    padding: 80px 20px 70px;
+    padding: 75px 25px 65px;
 }
 
 .header-content {
     max-width: 900px;
-    margin: auto;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .small-title {
-    letter-spacing: 4px;
+    color: #ffd166;
     font-size: 13px;
     font-weight: bold;
+    letter-spacing: 4px;
     margin-bottom: 12px;
-    color: #ffd166;
 }
 
 .site-header h1 {
     font-family: Georgia, serif;
     font-size: 60px;
-    margin-bottom: 10px;
+    line-height: 1.1;
+    margin-bottom: 12px;
 }
 
 .subtitle {
+    color: #eef6ff;
     font-size: 18px;
     letter-spacing: 1px;
-    color: #eef6ff;
 }
 
 
-/* =========================================
+/* =========================================================
    NAVIGATION
-========================================= */
+========================================================= */
 
 .main-nav {
-    background: white;
+    background-color: white;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
     gap: 10px;
+
     padding: 18px 20px;
+
     border-bottom: 1px solid #dbe4ef;
 
     position: sticky;
     top: 0;
     z-index: 100;
+
+    box-shadow: 0 2px 12px rgba(23, 63, 115, 0.05);
 }
 
 .main-nav a {
     color: #2f6fb0;
+
     font-weight: bold;
-    padding: 9px 16px;
+    font-size: 15px;
+
+    padding: 9px 17px;
+
     border-radius: 25px;
-    transition: 0.3s;
+
+    transition: 0.25s ease;
 }
 
 .main-nav a:hover,
@@ -106,82 +127,63 @@ a {
 }
 
 
-/* =========================================
-   HERO
-========================================= */
+/* =========================================================
+   COMMON TYPOGRAPHY
+========================================================= */
 
-.hero {
-    text-align: center;
-    padding: 110px 25px;
-
-    background:
-        radial-gradient(
-            circle at top left,
-            #dcecff,
-            transparent 35%
-        ),
-        radial-gradient(
-            circle at bottom right,
-            #ffd9cf,
-            transparent 35%
-        ),
-        #fffaf7;
-}
-
-.hero-content {
-    max-width: 850px;
-    margin: auto;
-}
-
-.eyebrow,
-.section-label {
+.section-label,
+.eyebrow {
     color: #e76f51;
+
     font-size: 13px;
-    letter-spacing: 3px;
     font-weight: bold;
-    margin-bottom: 15px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 14px;
+
+    text-align: center;
 }
 
-.hero h2 {
+.section-title {
     font-family: Georgia, serif;
-    font-size: 54px;
-    line-height: 1.15;
+
     color: #173f73;
-    margin-bottom: 28px;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
 }
 
-.hero h2 span {
-    color: #e76f51;
-}
+.section-intro {
+    max-width: 750px;
 
-.hero-description {
-    max-width: 720px;
-    margin: 0 auto 17px;
-    font-size: 18px;
-    color: #56606d;
-}
+    margin: 0 auto 50px;
 
-.hero-buttons {
-    margin-top: 38px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+    color: #66707a;
+
+    font-size: 17px;
 }
 
 
-/* =========================================
+/* =========================================================
    BUTTONS
-========================================= */
+========================================================= */
 
 .primary-button,
 .secondary-button,
 .light-button {
     display: inline-block;
+
     padding: 13px 25px;
+
     border-radius: 30px;
+
     font-weight: bold;
-    transition: 0.3s;
+
+    transition: 0.25s ease;
 }
 
 .primary-button {
@@ -205,49 +207,108 @@ a {
 }
 
 
-/* =========================================
-   SECTIONS
-========================================= */
+/* =========================================================
+   HOME HERO
+========================================================= */
+
+.hero {
+    text-align: center;
+
+    padding: 110px 25px;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #dcecff,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            #ffd9cf,
+            transparent 35%
+        ),
+        #fffaf7;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-family: Georgia, serif;
+
+    font-size: 54px;
+    line-height: 1.15;
+
+    color: #173f73;
+
+    margin-bottom: 28px;
+}
+
+.hero h2 span {
+    color: #e76f51;
+}
+
+.hero-description {
+    max-width: 720px;
+
+    margin: 0 auto 17px;
+
+    font-size: 18px;
+
+    color: #56606d;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 38px;
+}
+
+
+/* =========================================================
+   STANDARD SECTION
+========================================================= */
 
 .section {
-    padding: 90px 25px;
     max-width: 1200px;
-    margin: auto;
+
+    margin: 0 auto;
+
+    padding: 90px 25px;
+
     text-align: center;
 }
 
-.section-title {
-    font-family: Georgia, serif;
-    font-size: 40px;
-    color: #173f73;
-    margin-bottom: 20px;
-}
 
-.section-intro {
-    max-width: 750px;
-    margin: 0 auto 50px;
-    color: #66707a;
-    font-size: 17px;
-}
-
-
-/* =========================================
-   INTEREST CARDS
-========================================= */
+/* =========================================================
+   INTEREST / WHAT I DO CARDS
+========================================================= */
 
 .interest-grid {
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
+
     gap: 22px;
 }
 
 .interest-card {
-    background: white;
-    border-radius: 20px;
+    background-color: white;
+
     padding: 35px 25px;
+
     border: 1px solid #dfe7ef;
-    transition: 0.3s;
+    border-radius: 20px;
+
     box-shadow: 0 8px 20px rgba(23, 63, 115, 0.06);
+
+    transition: 0.3s ease;
 }
 
 .interest-card:nth-child(1) {
@@ -268,21 +329,23 @@ a {
 
 .interest-card:hover {
     transform: translateY(-7px);
+
     box-shadow: 0 14px 28px rgba(23, 63, 115, 0.12);
 }
 
 .card-icon {
     width: 58px;
     height: 58px;
-    margin: auto auto 20px;
+
+    margin: 0 auto 20px;
+
     border-radius: 50%;
 
-    background:
-        linear-gradient(
-            135deg,
-            #dbeafe,
-            #ffe7df
-        );
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #ffe7df
+    );
 
     color: #173f73;
 
@@ -295,92 +358,107 @@ a {
 
 .interest-card h3 {
     color: #2f6fb0;
+
     margin-bottom: 12px;
 }
 
 .interest-card p {
-    font-size: 15px;
     color: #66707a;
+
+    font-size: 15px;
 }
 
 
-/* =========================================
+/* =========================================================
    PROJECTS
-========================================= */
+========================================================= */
 
 .projects-preview {
-    max-width: none;
-    background:
-        linear-gradient(
-            180deg,
-            #f3f8ff,
-            #fff8f4
-        );
+    padding: 90px 25px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        180deg,
+        #f3f8ff,
+        #fff8f4
+    );
 }
 
 .projects-preview > * {
     max-width: 1100px;
+
     margin-left: auto;
     margin-right: auto;
 }
 
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-
     max-width: 1100px;
-    margin: auto;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
 }
 
 .project-card {
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-    text-align: left;
+    background-color: white;
+
     border: 1px solid #dfe7ef;
-    transition: 0.3s;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    text-align: left;
+
     box-shadow: 0 10px 20px rgba(23, 63, 115, 0.06);
+
+    transition: 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-6px);
+
     box-shadow: 0 15px 30px rgba(23, 63, 115, 0.12);
 }
 
 .project-number {
-    background:
-        linear-gradient(
-            135deg,
-            #173f73,
-            #2f6fb0,
-            #7aa7d9
-        );
+    padding: 25px;
+
+    background: linear-gradient(
+        135deg,
+        #173f73,
+        #2f6fb0,
+        #7aa7d9
+    );
 
     color: white;
+
     font-family: Georgia, serif;
+
     font-size: 42px;
-    padding: 25px;
 }
 
 .project-card:nth-child(2) .project-number {
-    background:
-        linear-gradient(
-            135deg,
-            #d95d39,
-            #e76f51,
-            #f4a261
-        );
+    background: linear-gradient(
+        135deg,
+        #d95d39,
+        #e76f51,
+        #f4a261
+    );
 }
 
 .project-card:nth-child(3) .project-number {
-    background:
-        linear-gradient(
-            135deg,
-            #d69c25,
-            #f2b84b,
-            #ffd166
-        );
+    background: linear-gradient(
+        135deg,
+        #d69c25,
+        #f2b84b,
+        #ffd166
+    );
 }
 
 .project-content {
@@ -389,274 +467,204 @@ a {
 
 .project-type {
     color: #e76f51;
+
     font-size: 11px;
+
     letter-spacing: 2px;
+
     font-weight: bold;
+
     margin-bottom: 10px;
 }
 
 .project-card h3 {
     font-family: Georgia, serif;
+
     color: #173f73;
+
     font-size: 24px;
+
     margin-bottom: 15px;
 }
 
 .project-card p {
     color: #66707a;
+
     margin-bottom: 20px;
 }
 
 .project-card a {
     color: #2f6fb0;
+
     font-weight: bold;
 }
 
 .view-all {
     text-align: center;
+
     margin-top: 45px;
 }
 
 
-/* =========================================
-   SKILLS
-========================================= */
+/* =========================================================
+   SKILLS BANNER
+========================================================= */
 
 .skills-banner {
-    background:
-        linear-gradient(
-            135deg,
-            #173f73,
-            #2f6fb0,
-            #6c8cd5
-        );
+    padding: 85px 25px;
+
+    background: linear-gradient(
+        135deg,
+        #173f73,
+        #2f6fb0,
+        #6c8cd5
+    );
 
     color: white;
+
     text-align: center;
-    padding: 85px 25px;
+}
+
+.skills-banner h2 {
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+
+    margin-bottom: 35px;
 }
 
 .light-label {
     color: #ffd166;
 }
 
-.skills-banner h2 {
-    font-family: Georgia, serif;
-    font-size: 40px;
-    margin-bottom: 35px;
-}
-
 .skills-list {
+    max-width: 850px;
+
+    margin: 0 auto 40px;
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
     gap: 12px;
-    max-width: 850px;
-    margin: 0 auto 40px;
 }
 
 .skills-list span {
-    background-color: rgba(255, 255, 255, 0.13);
+    padding: 9px 17px;
+
     border: 1px solid rgba(255, 255, 255, 0.35);
 
-    padding: 9px 17px;
     border-radius: 25px;
-}
 
-.skills-list span:nth-child(3n + 1) {
-    border-color: #ffd166;
-}
-
-.skills-list span:nth-child(3n + 2) {
-    border-color: #ffc7b8;
-}
-
-.skills-list span:nth-child(3n + 3) {
-    border-color: #b8d7ff;
+    background-color: rgba(255, 255, 255, 0.13);
 }
 
 .light-button {
     border: 2px solid white;
+
     color: white;
 }
 
 .light-button:hover {
-    background: white;
+    background-color: white;
+
     color: #2f6fb0;
 }
 
 
-/* =========================================
+/* =========================================================
    CONTACT PREVIEW
-========================================= */
+========================================================= */
 
 .contact-preview {
-    text-align: center;
     padding: 100px 25px;
 
-    background:
-        linear-gradient(
-            180deg,
-            #fffaf7,
-            #f2f7ff
-        );
+    text-align: center;
+
+    background: linear-gradient(
+        180deg,
+        #fffaf7,
+        #f2f7ff
+    );
 }
 
 .contact-preview h2 {
     font-family: Georgia, serif;
-    font-size: 42px;
+
     color: #173f73;
+
+    font-size: 42px;
+
     margin-bottom: 15px;
 }
 
 .contact-preview p {
     max-width: 650px;
+
     margin: 0 auto 30px;
+
     color: #66707a;
+
     font-size: 17px;
 }
 
 
-/* =========================================
-   FOOTER
-========================================= */
-
-footer {
-    background-color: #102a43;
-    color: white;
-    text-align: center;
-    padding: 55px 20px 35px;
-}
-
-footer h3 {
-    font-family: Georgia, serif;
-    font-size: 25px;
-    margin-bottom: 5px;
-}
-
-footer > p {
-    color: #cad8e8;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 22px;
-    margin: 25px 0;
-}
-
-.footer-links a {
-    color: white;
-}
-
-.footer-links a:hover {
-    color: #ffd166;
-}
-
-.copyright {
-    font-size: 13px;
-    margin-top: 25px;
-}
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 900px) {
-
-    .interest-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .site-header h1 {
-        font-size: 42px;
-    }
-
-    .hero h2 {
-        font-size: 38px;
-    }
-
-    .main-nav {
-        gap: 4px;
-        padding: 12px;
-    }
-
-    .main-nav a {
-        padding: 7px 10px;
-        font-size: 14px;
-    }
-
-    .interest-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .section-title,
-    .skills-banner h2,
-    .contact-preview h2 {
-        font-size: 32px;
-    }
-
-}
-
-
-/* =========================================
+/* =========================================================
    CONTACT PAGE
-========================================= */
+========================================================= */
 
 .contact-page {
     max-width: 1100px;
-    margin: auto;
+
+    margin: 0 auto;
+
     padding: 90px 25px;
+
     text-align: center;
 }
 
 .contact-page > h2 {
     font-family: Georgia, serif;
+
     font-size: 46px;
+
     color: #173f73;
+
     margin-bottom: 20px;
 }
 
 .contact-intro {
     max-width: 700px;
+
     margin: 0 auto 55px;
-    font-size: 18px;
+
     color: #66707a;
+
+    font-size: 18px;
 }
-
-
-/* CONTACT CARDS */
 
 .contact-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 25px;
+
     margin-bottom: 80px;
 }
 
 .contact-card {
-    background: white;
+    background-color: white;
+
     padding: 40px 28px;
-    border-radius: 20px;
 
     border: 1px solid #dfe7ef;
 
-    box-shadow:
-        0 10px 25px
-        rgba(23, 63, 115, 0.08);
+    border-radius: 20px;
 
-    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(23, 63, 115, 0.08);
+
+    transition: 0.3s ease;
 }
 
 .contact-card:nth-child(1) {
@@ -674,9 +682,7 @@ footer > p {
 .contact-card:hover {
     transform: translateY(-7px);
 
-    box-shadow:
-        0 16px 35px
-        rgba(23, 63, 115, 0.15);
+    box-shadow: 0 16px 35px rgba(23, 63, 115, 0.15);
 }
 
 .contact-icon {
@@ -687,12 +693,11 @@ footer > p {
 
     border-radius: 50%;
 
-    background:
-        linear-gradient(
-            135deg,
-            #dcecff,
-            #ffe2d9
-        );
+    background: linear-gradient(
+        135deg,
+        #dcecff,
+        #ffe2d9
+    );
 
     color: #173f73;
 
@@ -730,13 +735,10 @@ footer > p {
     color: #e76f51;
 }
 
-
-/* BOTTOM CONTACT BOX */
-
 .contact-message {
     max-width: 750px;
 
-    margin: auto;
+    margin: 0 auto;
 
     padding: 55px 45px;
 
@@ -777,55 +779,51 @@ footer > p {
 }
 
 
-/* CONTACT MOBILE */
-
-@media (max-width: 800px) {
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-page > h2 {
-        font-size: 38px;
-    }
-
-    .contact-message {
-        padding: 40px 25px;
-    }
-
-}
-
-/* =========================================
-   RESUME HERO
-========================================= */
+/* =========================================================
+   RESUME PAGE HERO
+========================================================= */
 
 .resume-hero {
+    width: 100%;
+
+    padding: 105px 25px 90px;
+
     text-align: center;
-    padding: 95px 25px 80px;
 
     background:
         radial-gradient(
-            circle at top left,
-            #dcecff,
-            transparent 35%
+            circle at 12% 10%,
+            rgba(122, 167, 217, 0.35),
+            transparent 28%
         ),
         radial-gradient(
-            circle at bottom right,
-            #ffe2d9,
-            transparent 35%
+            circle at 88% 90%,
+            rgba(231, 111, 81, 0.22),
+            transparent 28%
         ),
         #fffaf7;
 }
 
+.resume-hero .section-label {
+    text-align: center;
+
+    margin-bottom: 18px;
+}
+
 .resume-hero h2 {
-    max-width: 800px;
+    max-width: 850px;
+
     margin: 0 auto 25px;
 
     font-family: Georgia, serif;
-    font-size: 50px;
-    line-height: 1.15;
 
     color: #173f73;
+
+    font-size: 52px;
+
+    line-height: 1.15;
+
+    text-align: center;
 }
 
 .resume-hero h2 span {
@@ -834,62 +832,83 @@ footer > p {
 
 .resume-hero > p:last-child {
     max-width: 760px;
-    margin: auto;
+
+    margin: 0 auto;
+
+    color: #66707a;
 
     font-size: 18px;
-    color: #66707a;
+
+    text-align: center;
 }
 
 
-/* =========================================
-   RESUME SECTION
-========================================= */
+/* =========================================================
+   RESUME CARDS SECTION
+========================================================= */
 
 .resume-section {
-    padding: 90px 25px;
-    background-color: #ffffff;
+    width: 100%;
+
+    padding: 95px 25px 105px;
+
+    background: linear-gradient(
+        180deg,
+        #ffffff,
+        #f5f9ff
+    );
 }
 
 .resume-grid {
-    max-width: 1000px;
+    width: 100%;
+
+    max-width: 1050px;
+
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
 
-    gap: 32px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 35px;
+
+    align-items: stretch;
 }
 
 
-/* =========================================
-   RESUME CARDS
-========================================= */
+/* =========================================================
+   INDIVIDUAL RESUME CARDS
+========================================================= */
 
 .resume-card {
     position: relative;
 
-    min-height: 520px;
+    width: 100%;
+
+    min-height: 535px;
+
+    padding: 48px 40px 42px;
 
     display: flex;
+
     flex-direction: column;
+
+    align-items: center;
 
     text-align: center;
 
-    padding: 45px 38px;
+    background-color: white;
+
+    border: 1px solid #e1e9f2;
 
     border-radius: 28px;
 
-    background: white;
+    overflow: hidden;
 
     box-shadow:
-        0 14px 35px
-        rgba(23, 63, 115, 0.1);
+        0 15px 40px rgba(23, 63, 115, 0.10);
 
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-
-    overflow: hidden;
+    transition: 0.3s ease;
 }
 
 .resume-card::before {
@@ -905,47 +924,46 @@ footer > p {
 }
 
 .data-card::before {
-    background:
-        linear-gradient(
-            90deg,
-            #173f73,
-            #2f6fb0,
-            #7aa7d9
-        );
+    background: linear-gradient(
+        90deg,
+        #173f73,
+        #2f6fb0,
+        #7aa7d9
+    );
 }
 
 .gis-card::before {
-    background:
-        linear-gradient(
-            90deg,
-            #e76f51,
-            #f4a261,
-            #ffd166
-        );
+    background: linear-gradient(
+        90deg,
+        #e76f51,
+        #f4a261,
+        #ffd166
+    );
 }
 
 .resume-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-9px);
 
     box-shadow:
-        0 20px 45px
-        rgba(23, 63, 115, 0.16);
+        0 22px 50px rgba(23, 63, 115, 0.17);
 }
 
 
-/* =========================================
-   CARD TOP
-========================================= */
+/* =========================================================
+   RESUME ICONS
+========================================================= */
 
 .resume-card-top {
+    width: 100%;
+
     text-align: center;
 }
 
 .resume-icon {
-    width: 78px;
-    height: 78px;
+    width: 82px;
+    height: 82px;
 
-    margin: 0 auto 20px;
+    margin: 0 auto 22px;
 
     display: flex;
     align-items: center;
@@ -953,39 +971,49 @@ footer > p {
 
     border-radius: 50%;
 
-    font-size: 28px;
+    font-size: 27px;
     font-weight: bold;
 }
 
 .data-card .resume-icon {
-    background:
-        linear-gradient(
-            135deg,
-            #dcecff,
-            #c8e2ff
-        );
-
     color: #173f73;
+
+    background: linear-gradient(
+        135deg,
+        #d7eaff,
+        #edf6ff
+    );
+
+    box-shadow: 0 7px 18px rgba(47, 111, 176, 0.13);
 }
 
 .gis-card .resume-icon {
-    background:
-        linear-gradient(
-            135deg,
-            #ffe2d9,
-            #fff0c9
-        );
-
     color: #d95d39;
+
+    background: linear-gradient(
+        135deg,
+        #ffe0d6,
+        #fff0c7
+    );
+
+    box-shadow: 0 7px 18px rgba(231, 111, 81, 0.13);
 }
+
+
+/* =========================================================
+   RESUME CARD TEXT
+========================================================= */
 
 .resume-label {
     margin-bottom: 12px;
 
     font-size: 12px;
+
     font-weight: bold;
 
     letter-spacing: 2.5px;
+
+    text-align: center;
 }
 
 .data-card .resume-label {
@@ -996,49 +1024,55 @@ footer > p {
     color: #e76f51;
 }
 
-
-/* =========================================
-   CARD CONTENT
-========================================= */
-
 .resume-card h3 {
+    width: 100%;
+
     margin-bottom: 16px;
 
     font-family: Georgia, serif;
 
+    color: #173f73;
+
     font-size: 30px;
 
-    color: #173f73;
+    text-align: center;
 }
 
 .resume-description {
-    max-width: 390px;
+    max-width: 400px;
 
-    margin: 0 auto 26px;
+    margin: 0 auto 28px;
 
     color: #66707a;
 
     font-size: 16px;
+
+    line-height: 1.7;
+
+    text-align: center;
 }
 
 
-/* =========================================
-   RESUME TAGS
-========================================= */
+/* =========================================================
+   RESUME SKILL TAGS
+========================================================= */
 
 .resume-tags {
+    width: 100%;
+
     display: flex;
-
     justify-content: center;
-
+    align-items: center;
     flex-wrap: wrap;
 
     gap: 9px;
 
-    margin-bottom: 32px;
+    margin: 0 auto 32px;
 }
 
 .resume-tags span {
+    display: inline-block;
+
     padding: 7px 13px;
 
     border-radius: 20px;
@@ -1049,29 +1083,30 @@ footer > p {
 }
 
 .data-card .resume-tags span {
-    background-color: #edf5fc;
-
     color: #2f6fb0;
+
+    background-color: #edf5fc;
 }
 
 .gis-card .resume-tags span {
-    background-color: #fff1eb;
-
     color: #d95d39;
+
+    background-color: #fff1eb;
 }
 
 
-/* =========================================
+/* =========================================================
    RESUME BUTTONS
-========================================= */
+========================================================= */
 
 .resume-buttons {
+    width: 100%;
+
     margin-top: auto;
 
     display: flex;
-
     justify-content: center;
-
+    align-items: center;
     flex-wrap: wrap;
 
     gap: 12px;
@@ -1079,11 +1114,16 @@ footer > p {
 
 .resume-main-button,
 .resume-outline-button {
-    display: inline-block;
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 145px;
 
     padding: 12px 22px;
 
-    border-radius: 28px;
+    border-radius: 30px;
 
     font-weight: bold;
 
@@ -1091,58 +1131,74 @@ footer > p {
 }
 
 .resume-main-button {
-    background-color: #2f6fb0;
-
     color: white;
+
+    background-color: #2f6fb0;
+}
+
+.resume-main-button:hover {
+    background-color: #173f73;
+
+    transform: translateY(-2px);
+}
+
+.resume-outline-button {
+    color: #2f6fb0;
+
+    border: 2px solid #2f6fb0;
+
+    background-color: white;
+}
+
+.resume-outline-button:hover {
+    color: white;
+
+    background-color: #2f6fb0;
 }
 
 .gis-card .resume-main-button {
     background-color: #e76f51;
 }
 
-.resume-main-button:hover {
-    transform: translateY(-2px);
-
-    opacity: 0.9;
-}
-
-.resume-outline-button {
-    border: 2px solid #2f6fb0;
-
-    color: #2f6fb0;
-
-    background: transparent;
+.gis-card .resume-main-button:hover {
+    background-color: #d95d39;
 }
 
 .gis-card .resume-outline-button {
-    border-color: #e76f51;
-
     color: #e76f51;
-}
 
-.resume-outline-button:hover {
-    background-color: #2f6fb0;
-
-    color: white;
+    border-color: #e76f51;
 }
 
 .gis-card .resume-outline-button:hover {
-    background-color: #e76f51;
-
     color: white;
+
+    background-color: #e76f51;
 }
 
 
-/* =========================================
-   DATA + GEOGRAPHY SECTION
-========================================= */
+/* =========================================================
+   DATA + GEOGRAPHY RESUME SECTION
+========================================================= */
 
 .resume-background {
-    padding: 100px 25px;
+    width: 100%;
+
+    padding: 105px 25px;
 
     text-align: center;
 
     background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(255, 209, 102, 0.14),
+            transparent 22%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(255, 255, 255, 0.08),
+            transparent 25%
+        ),
         linear-gradient(
             135deg,
             #173f73,
@@ -1157,10 +1213,14 @@ footer > p {
     max-width: 760px;
 
     margin: 0 auto;
+
+    text-align: center;
 }
 
 .resume-background .section-label {
     color: #ffd166;
+
+    text-align: center;
 }
 
 .resume-background h2 {
@@ -1168,21 +1228,27 @@ footer > p {
 
     font-family: Georgia, serif;
 
-    font-size: 42px;
-
     color: white;
+
+    font-size: 44px;
+
+    text-align: center;
 }
 
 .resume-background p {
+    max-width: 720px;
+
     margin: 0 auto 18px;
+
+    color: #eef5ff;
 
     font-size: 17px;
 
-    color: #eef5ff;
+    text-align: center;
 }
 
 .resume-background .primary-button {
-    margin-top: 22px;
+    margin-top: 25px;
 
     background-color: white;
 
@@ -1196,26 +1262,180 @@ footer > p {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
+/* =========================================================
+   FOOTER
+========================================================= */
 
-@media (max-width: 800px) {
+footer {
+    padding: 55px 20px 35px;
+
+    background-color: #102a43;
+
+    color: white;
+
+    text-align: center;
+}
+
+footer h3 {
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    margin-bottom: 5px;
+}
+
+footer > p {
+    color: #cad8e8;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 22px;
+
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: white;
+}
+
+.footer-links a:hover {
+    color: #ffd166;
+}
+
+.copyright {
+    margin-top: 25px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .interest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
 
     .resume-grid {
-        grid-template-columns: 1fr;
-
         max-width: 600px;
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .site-header {
+        padding: 55px 20px 45px;
+    }
+
+    .site-header h1 {
+        font-size: 42px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    .main-nav {
+        gap: 4px;
+
+        padding: 12px;
+    }
+
+    .main-nav a {
+        padding: 7px 10px;
+
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .interest-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title,
+    .skills-banner h2,
+    .contact-preview h2 {
+        font-size: 32px;
+    }
+
+    .contact-message {
+        padding: 40px 25px;
+    }
+
+
+    /* RESUME MOBILE */
+
+    .resume-hero {
+        padding: 75px 20px 65px;
     }
 
     .resume-hero h2 {
         font-size: 38px;
     }
 
+    .resume-hero > p:last-child {
+        font-size: 16px;
+    }
+
+    .resume-section {
+        padding: 65px 20px 75px;
+    }
+
     .resume-card {
         min-height: auto;
 
-        padding: 40px 25px;
+        padding: 40px 24px 35px;
+
+        border-radius: 22px;
+    }
+
+    .resume-card h3 {
+        font-size: 27px;
+    }
+
+    .resume-buttons {
+        flex-direction: column;
+    }
+
+    .resume-main-button,
+    .resume-outline-button {
+        width: 100%;
+
+        max-width: 260px;
+    }
+
+    .resume-background {
+        padding: 75px 20px;
     }
 
     .resume-background h2 {
